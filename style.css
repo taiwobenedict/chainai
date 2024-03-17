@@ -1,0 +1,328 @@
+:root {
+  --dark: #222;
+  --light: #fff;
+  --primay: #8E1451;
+  --secondary: #2E0E68;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+img {
+  width: 100%;
+}
+
+
+
+/* Header */
+header {
+  height: initial;
+}
+
+a {
+    color: var(--light) ;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.container {
+    padding-inline: 0px !important;
+}
+
+.main-nav {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+  padding: 5px 15px;
+
+}
+
+.logo {
+  padding: 1.1rem;
+  width: 80px;
+}
+
+.navbar-brand {
+    width: 130px;
+}
+
+.nav-link:hover {
+    color: var(--primay);
+}
+
+
+/* Hero */
+.hero-text {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-btn-container {
+    height: 40%;
+    color: var(--light);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-btn {
+    border: var(--primay) 1px dashed;
+    color: #fff;
+    width: 100%;
+    max-width: 180px;
+    transition: 0.4s;
+}
+
+.hero-btn:hover {
+    color: var(--light);
+    background-color: var(--primay);
+}
+
+.hero-img {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.hero-icons {
+    gap: 1rem;
+}
+
+.hero-icon {
+    width: 70px;
+}
+
+.dashed-line {
+    width: 100%;
+    max-width: 300px;
+    border: 1px dashed var(--primay);
+}
+
+.hero-icon2 {
+    width: 90px;
+    margin-left: 1rem;
+}
+
+/* Features */
+.feature-container {
+    padding-block: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.feature-cards {
+    display: flex;
+}
+
+.feature-card {
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    position: relative;
+    margin: -2px;
+}
+
+.feature-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.feature-img img {
+    height: 100%;
+}
+
+.feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Roadmap */
+.roadmap-container {
+    padding-block: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.map-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid var(--primay) 2px;
+    top: 0;
+    left: -20px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 30, 38);
+
+}
+
+.map {
+    width: 100%;
+    max-width:350px;
+    position: relative;
+}
+
+.map h5 {
+    padding-left: 40px;
+}
+
+.map-items {
+    border-top: dashed 5px var(--primay);
+    padding: 40px 20px;
+    border-left: 2px solid var(--primay);
+}
+
+.map-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+
+.map-item p {
+    margin: 0;
+}
+
+.bullet {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primay);
+    border-radius: 50%;
+}
+
+/* How to Buy */
+.how-to-buy {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-block: 100px;
+}
+
+.box {
+    padding: 30px 20px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 3px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    max-width: 700px;
+    margin: 0 auto 120px auto;
+
+}
+
+.inner-img {
+    max-width: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.fox {
+    opacity: 0.4;
+}
+
+.box-img {
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.box-1 {
+    border-color: #FB992D;
+    background-color: rgba(251, 153, 45, 0.05);
+}
+
+.box-1 h3 {
+    color: #FB992D;
+}
+
+.box-2 {
+    border-color: #07A7A5;
+    background-color: rgb(7, 167, 165, 0.05);
+}
+
+.box-2 h3 {
+    color: #07A7A5;
+}
+
+.box-3 {
+    border-color: #B511A4;
+    background-color: rgba(181, 17, 164, 0.05);
+}
+
+.box-3 h3 {
+    color: #B511A4;
+}
+
+/* Teams */
+.teams {
+    padding-block: 120px;
+}
+
+.team {
+ background-color: #333;
+ padding: 30px;
+ border-radius: 20px;
+ max-width: 380px;
+}
+
+.team-img {
+    height: 300px;
+}
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+ 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-nav {
+    position: static !important;
+  }
+
+  .navbar-nav .nav-link {
+    margin-inline: 10px;
+  }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
