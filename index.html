@@ -11,7 +11,7 @@
 <body>
 
     <header class=" border-bottom  position-sticky">
-        <div class="d-flex align-items-center header-container">
+        <div class="d-flex  header-container">
             <div class="logo border-right">
                 <img src="images/logo.png" alt="Logo">
             </div>
@@ -43,7 +43,7 @@
                 <div class="snow">
                     <img src="images/snow.png" alt="">
                 </div>
-                <div class="snow d-none d-sm-block">
+                <div class="snow d-none d-md-block">
                 </div>
             </div>
         </aside>
@@ -357,6 +357,16 @@
                     <p>Former AI startup CTO with extensive experience in AI and blockchain. Worked on AI research at NVIDIA.</p>
                 </div>
             </div>
+            <div class="swiper-slide">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="images/image2.png" alt="">
+                    </div>
+                    <h5 class="my-3">Dr. John Smith (Founder & CEO):</h5>
+                    <p>Former AI startup CTO with extensive experience in AI and blockchain. Worked on AI research at NVIDIA.</p>
+                </div>
+            </div>
+            
             </div>
         </div>
     </div>
@@ -438,7 +448,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="summary-img d-none d-sm-block mx-auto ">
+                    <div class="summary-img d-none d-md-block mx-auto ">
                         <img src="images/summary.png " alt="">
                     </div>
                 </div>
@@ -459,10 +469,29 @@
             autoplay: {
           delay: 2000,
         },
-        spaceBetween: "30px",
+        spaceBetween: "10px",
 
         speed:2000,
-        slidesPerView: 3,
+        slidesPerView: 1,
+
+          // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
           
         });
     </script>
