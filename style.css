@@ -1,5 +1,5 @@
 :root {
-  --dark: #222;
+  --dark: #000;
   --light: #fff;
   --primay: #8e1451;
   --secondary: #2e0e68;
@@ -168,7 +168,8 @@ a {
 
 .social:hover {
   text-decoration: none;
-  color: var(--dark);
+  color: #07a7a5;
+  border-color: #07a7a5;
 }
 
 .social-line {
