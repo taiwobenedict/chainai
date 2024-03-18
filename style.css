@@ -38,7 +38,7 @@ header {
 }
 
 .header-container {
-  max-width: 1398px;
+  max-width: 1287px;
   width: 100%;
 }
 
@@ -50,7 +50,7 @@ a {
 
 .main-nav {
   position: absolute !important;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   transition: 0.4s;
@@ -129,6 +129,10 @@ a {
 .hero-icon2 {
   width: 90px;
   margin-left: 1rem;
+}
+
+.hero-border {
+  border-right: solid 1px #f4f4f4;
 }
 
 .snows {
@@ -310,8 +314,7 @@ small {
 
 /* How to Buy */
 .how-to-buy {
-  max-width: 1500px;
-  margin: 0 auto;
+  max-width: 1135px !important;
   padding-block: 100px;
 }
 
@@ -323,7 +326,7 @@ small {
   text-align: center;
   position: relative;
   min-height: 200px;
-  max-width: 700px;
+  max-width: 630px;
   margin: 0 auto 120px auto;
 }
 
@@ -455,10 +458,10 @@ small {
 }
 
 .summary-img {
-  max-width: 250px;
+  max-width: 200px;
   width: 100%;
   position: absolute;
-  right: -50;
+  right: -10;
   top: -90;
 }
 
@@ -471,40 +474,71 @@ small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+  .feature-cards {
+    flex-direction: column;
+  }
+
+  #hero {
+    flex-direction: column;
+  }
+
+  .snows {
+    flex-direction: row;
+  }
+
+  .summary-img {
+    position: static;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .hero-border {
-    border-right: #ccc 1px solid;
-  }
-}
 
 @media (max-width: 768px) {
-  .main-nav {
-    backdrop-filter: blur(10px);
-    z-index: 100;
-    background-color: rgba(34, 34, 34, 0.8);
-    padding-block: 10px;
+  .hero-border {
+    border-right: none;
+  }
+  .hero-content {
+    padding: 50px 10px 50px 10px;
   }
 
+  .maps {
+    flex-direction: column;
+    padding-left: 1rem;
+  }
 
+  .map {
+    max-width: auto;
+  }
+
+  .socials {
+    flex-direction: row;
+  }
+
+  .social-line {
+    border: none !important;
+  }
+
+  .container {
+    border: none !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .main-nav {
-    position: static !important;
-  }
-
-  .navbar-nav .nav-link {
-    margin-inline: 10px;
+    top: 100%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
+  .main-nav {
+    position: static !important;
+  }
   .container {
-    max-width: 1250px !important;
+    max-width: 1135px !important;
   }
 }
