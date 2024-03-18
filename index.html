@@ -10,38 +10,49 @@
 </head>
 <body>
 
-    <header class=" border-bottom  position-relative">
-        <div class="d-flex align-items-center">
+    <header class=" border-bottom  position-sticky">
+        <div class="d-flex align-items-center header-container">
             <div class="logo border-right">
                 <img src="images/logo.png" alt="Logo">
             </div>
             <nav class="navbar navbar-expand-lg w-100 position-static">
                 <a class="navbar-brand" href="#"><img src="images/brand.png" alt=""></a>
                 <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon bg-transparent"></span>
                 </button>
                 <div class="collapse navbar-collapse main-nav d-lg-flex" id="navbarNavAltMarkup">
                   <div class="navbar-nav mx-lg-auto">
                     <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#roadmap">Roadmap</a>
                   </div>
-                  <button class="btn btn-light">Hello</button>
+                  <button class="btn app">START APP</button>
                 </div>
             </nav>
         </div>
     </header>
 
     <!-- Hero -->
-    <div id="hero" class="d-flex border-bottom">
-        <aside class=""> Hell</aside>
+    <div id="hero" class="d-flex border-bottom justify-content-center">
+        <aside class="">
+            <div class="snows">
+                <div class="snow">
+                    <img src="images/snow.png" alt="">
+                </div>
+                <div class="snow">
+                    <img src="images/snow.png" alt="">
+                </div>
+                <div class="snow">
+                </div>
+            </div>
+        </aside>
 
-        <main class="w-100 border border-top-0 border-bottom-0 container">
+        <main class="w-100 border border-top-0 border-bottom-0 container px-0 mx-0">
            <div class="row m-0">
-            <div class="col-md-6 border-right p-0">
+            <div class="col-md-6 border-right hero-border p-0">
                <div class="hero-text border-bottom">
-                <div>
+                <div class="p-5">
                     <h1>Chain AI</h1>
                     <p>Decentralized AI cloud computing platform</p>
                 </div>
@@ -51,8 +62,9 @@
                </div>
             </div>
             <div class="col-md-6 p-0">
-                <div class="hero-img">
+                <div class="hero-img position-relative">
                     <img src="images/hero.png" alt="">
+                    <div class="bg-shade"></div>
                 </div>
             </div>
            </div>
@@ -78,7 +90,29 @@
             </div>
            
         </main>
-        <aside class="">Hello</aside>
+        <aside>
+            
+            <div  class=" socials hero-social">
+                <div class="social-line">
+                    <a href="" class="social">
+                        <div class="social-icon"><i class="fa-brands fa-discord"></i></div>
+                        <small>Discord</small>
+                    </a>
+                </div>
+                <div class="social-line">
+                    <a href="#" class="social">
+                        <div class="social-icon"><i class="fa-brands fa-telegram"></i></div>
+                        <small>Telegram</small>
+                    </a>
+                </div>
+                <div class="social-line">
+                    <a href="#" class="social">
+                        <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
+                        <small>Twitter</small>
+                    </a>
+                </div>
+            </div>
+        </aside>
     </div>
 
     <!-- Feature -->
@@ -292,7 +326,7 @@
                     <div class="team-img">
                         <img src="images/image1.png" alt="">
                     </div>
-                    <h5>Dr. John Smith (Founder & CEO):</h5>
+                    <h5 class="my-3">Dr. John Smith (Founder & CEO):</h5>
                     <p>Former AI startup CTO with extensive experience in AI and blockchain. Worked on AI research at NVIDIA.</p>
                 </div>
             </div>
@@ -301,7 +335,7 @@
                     <div class="team-img">
                         <img src="images/image2.png" alt="">
                     </div>
-                    <h5>Dr. John Smith (Founder & CEO):</h5>
+                    <h5 class="my-3">Dr. John Smith (Founder & CEO):</h5>
                     <p>Former AI startup CTO with extensive experience in AI and blockchain. Worked on AI research at NVIDIA.</p>
                 </div>
             </div>
@@ -310,7 +344,7 @@
                     <div class="team-img">
                         <img src="images/image3.png" alt="">
                     </div>
-                    <h5>Dr. John Smith (Founder & CEO):</h5>
+                    <h5 class="my-3">Dr. John Smith (Founder & CEO):</h5>
                     <p>Former AI startup CTO with extensive experience in AI and blockchain. Worked on AI research at NVIDIA.</p>
                 </div>
             </div>
@@ -319,7 +353,7 @@
                     <div class="team-img">
                         <img src="images/image4.png" alt="">
                     </div>
-                    <h5>Dr. John Smith (Founder & CEO):</h5>
+                    <h5 class="my-3">Dr. John Smith (Founder & CEO):</h5>
                     <p>Former AI startup CTO with extensive experience in AI and blockchain. Worked on AI research at NVIDIA.</p>
                 </div>
             </div>
@@ -327,6 +361,90 @@
         </div>
     </div>
 
+
+           <!-- Faq-->
+        <div id="faq" class="border-bottom text-center border-top">
+            <div class="container border-left border-right py-4">
+                <h1>FAQ</h1>
+            </div>
+        </div>
+        <div class="container border-right border-left faq">
+            <div class="accordion bg-transparent" id="accordionExample">
+                <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is ChainAI?
+                    </button>
+                    </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vero modi vel impedit, deserunt ea mollitia ipsum iure placeat, quibusdam dolores veniam? Minus libero, dolorum facere veniam voluptatibus voluptate quaerat.
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can i get involved with the ChainAI community?
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti culpa hic aspernatur, officia eius architecto eaque, dolore provident laborum libero quod nihil maxime fuga, accusantium quaerat. Qui, ipsum autem!
+                    </div>
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can i buy $CAI token?
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti culpa hic aspernatur, officia eius architecto eaque, dolore provident laborum libero quod nihil maxime fuga, accusantium quaerat. Qui, ipsum autem!
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="summary">
+            <div class="container">
+                <div class="summary-container text-center">
+                    <div class="summary-content">
+                        <h1>Chain AI</h1>
+                        <p>At ChainAI, our mission is to build a decentralized AI cloud computing platform powered by blockchain technology. Our goal is to enable efficient resource utilization and secure transactions for AI and blockchain projects.</p>
+                        <div  class="d-flex  justify-content-betweem align-items-center socials summary-social">
+                            <a href="#" class="social">
+                                <div  class="social-icon"><i class="fa-brands fa-discord"></i></div>
+                                <small>Discord</small>
+                            </a>
+                            <a href="#" class="social">
+                                <div class="social-icon"><i class="fa-brands fa-telegram"></i></div>
+                                <small>Telegram</small>
+                            </a>
+                            <a href="#" class="social">
+                                <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
+                                <small>Twitter</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="summary-img">
+                        <img src="images/hero.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
